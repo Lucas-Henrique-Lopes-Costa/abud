@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 header,
@@ -26,6 +27,26 @@ a {
   --light-black: #2e2c2caf;
   --bggradient: linear-gradient(to bottom, #4fb2d6, #210e4d);
   --light-gray: rgba(255, 255, 255, 0.877);
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #3c6e9d;
+}
+
+.navbar::-webkit-scrollbar {
+  width: 0rem;
+}
+
+.navbar::-webkit-scrollbar-track {
+  background: #3c6e9d;
 }
 
 header a {
@@ -75,7 +96,7 @@ header .navbar-brand {
 }
 
 header .nav-link:hover {
-  color: rgb(0, 0, 0);
+  color: #1b2836;
 }
 
 header .row .col-md-7 {

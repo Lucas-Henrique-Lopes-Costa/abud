@@ -46,29 +46,13 @@
             <div class="mr-auto"></div>
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <button
-                  onclick="window.scroll({
-                  top: 0, // Captura a distancia do topo onde deseja ser rolado
-                  left: 0,// Faz o mesmo do top mas em um ambito horizontal
-                  behavior: 'smooth' // Aqui eh onde vem toda a magica, ele suporta duas opcoes, o `smooth` e o `normal`
-                })"
+                <a class="nav-link" href="#"
+                  >Home<span class="sr-only">(current)</span></a
                 >
-                  <a class="nav-link" href="#"
-                    >HOME<span class="sr-only">(current)</span></a
-                  >
-                </button>
               </li>
 
               <li class="nav-item">
-                <button
-                  onclick="window.scroll({
-                  top: 800, // Captura a distancia do topo onde deseja ser rolado
-                  left: 0,// Faz o mesmo do top mas em um ambito horizontal
-                  behavior: 'smooth' // Aqui eh onde vem toda a magica, ele suporta duas opcoes, o `smooth` e o `normal`
-                })"
-                >
-                  <a class="nav-link" href="#">Sobre Mim</a>
-                </button>
+                  <a class="nav-link" href="#sobre">Sobre Mim</a>
               </li>
 
               <li class="nav-item">
@@ -86,7 +70,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#resultados">Resultados</a>
+                <a class="nav-link" href="#resultados">Materiais Gratuitos</a>
               </li>
             </ul>
           </div>
@@ -99,16 +83,11 @@
             <h1>Aprenda Física de uma vez por todas!</h1>
             <p>Aprenda de maneira <b>simples</b> e <b>objetiva</b></p>
 
-            <a href="#">
+            <a href="#resultados">
               <button
                 class="btn btn-light px-5 py-2 primary-btn"
-                onclick="window.scroll({
-                top: 800, // Captura a distancia do topo onde deseja ser rolado
-                left: 0,// Faz o mesmo do top mas em um ambito horizontal
-                behavior: 'smooth' // Aqui eh onde vem toda a magica, ele suporta duas opcoes, o `smooth` e o `normal`
-              })"
               >
-                Saiba Mais...
+                Materais Gratuitos
               </button>
             </a>
           </div>
@@ -124,15 +103,15 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-md-6 col-12">
-              <div class="pray">
+              <div id="sobre" class="pray">
                 <img
-                  src="assets/pexels-photo-179941.jpeg"
+                  src="assets/pexels-photo-179941 (1).jpg"
                   alt="Pray"
                   class=""
                 />
               </div>
             </div>
-            <div id="sobre" class="col-md-6 col-12">
+            <div class="col-md-6 col-12">
               <div class="panel text-left">
                 <h1>Túlio Abud</h1>
 
@@ -158,11 +137,11 @@
           </div>
         </div>
       </section>
-      <section class="section-2 container-fluid p-0">
+      <section id="estatistica" class="section-2 container-fluid p-0">
         <div class="cover">
           <div class="overlay"></div>
           <div class="content text-center">
-            <h1 id="estatistica">Algumas Estatíscas</h1>
+            <h1>Algumas Estatíscas</h1>
             <p>Estatíscas tiradas do Instagram e do YouTube</p>
           </div>
         </div>
@@ -171,16 +150,16 @@
             class="numbers d-flex flex-md-row flex-wrap justify-content-center"
           >
             <div class="rect">
-              <h1>27700</h1>
-              <p>Inscritos</p>
+              <h1>27908</h1>
+              <p>Visualizações no Youtube</p>
             </div>
             <div class="rect">
-              <h1>19100</h1>
+              <h1>10792</h1>
               <p>Seguidores no Instagram</p>
             </div>
             <div class="rect">
-              <h1>620000</h1>
-              <p>Impressões</p>
+              <h1>383</h1>
+              <p>Exercícios Gratuitos</p>
             </div>
             <!-- <div class="rect">
             <h1>9152</h1>
@@ -189,7 +168,7 @@
           </div>
         </div>
 
-        <div class="purchase text-center">
+        <div id="preços" class="purchase text-center">
           <h1>Cursos</h1>
           <p>Texto</p>
           <div class="cards">
@@ -219,7 +198,7 @@
               <div class="card">
                 <div class="card-body">
                   <div class="title">
-                    <h5 id="preços" class="card-title">Salinha Online</h5>
+                    <h5 class="card-title">Salinha Online</h5>
                   </div>
                   <p class="card-text">
                     Veremos <b>todo o conteúdo</b> que é cobrado no ENEM através
@@ -265,10 +244,10 @@
           </div>
         </div>
       </section>
-      <section class="section-3 container-fluid p-0 text-center">
+      <section id="contato" class="section-3 container-fluid p-0 text-center">
         <div class="row">
           <div class="col-md-12 col-sm-12">
-            <h1 id="contato">Minhas Redes Sociais</h1>
+            <h1>Minhas Redes Sociais</h1>
             <p></p>
           </div>
         </div>
@@ -276,14 +255,28 @@
           <div class="col-md-6 col-sm-12 text-right">
             <div class="desktop shadow-lg">
               <a
-                href="https://www.youtube.com/professorantoniofernandes"
+                href="https://api.whatsapp.com/message/6252KLASPXSHN1"
                 target="_blank"
               >
                 <div class="d-flex flex-row justify-content-center">
-                  <i class="fas fa-desktop fa-3x py-2 pr-3"></i>
+                  <i class="fab fa-whatsapp fa-3x py-2 pr-3"></i>
+                  <div class="text text-left">
+                    <h3 class="pt-1 m-0">Whatspp</h3>
+                    <p class="p-0 m-0">+55 37 9197-5786</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="desktop shadow-lg">
+              <a
+                href="https://www.youtube.com/channel/UCkdFesSXh5O9bibWscu7k7Q"
+                target="_blank"
+              >
+                <div class="d-flex flex-row justify-content-center">
+                  <i class="fab fa-youtube fa-3x py-2 pr-3"></i>
                   <div class="text text-left">
                     <h3 class="pt-1 m-0">Youtube</h3>
-                    <p class="p-0 m-0">27 mil inscritos</p>
+                    <p class="p-0 m-0">592 inscritos</p>
                   </div>
                 </div>
               </a>
@@ -292,50 +285,56 @@
           <div class="col-md-6 col-sm-12 text-left">
             <div class="desktop shadow-lg">
               <a
-                href="https://www.instagram.com/prof.antoniofernandes/"
+                href="http://instagram.com/profabud/"
                 target="_blank"
               >
                 <div class="d-flex flex-row justify-content-center">
-                  <i class="fas fa-mobile-alt fa-3x py-2 pr-3"></i>
+                  <i class="fab fa-instagram fa-3x py-2 pr-3"></i>
                   <div class="text text-left">
                     <h3 class="pt-1 m-0">Instagram</h3>
-                    <p class="p-0 m-0">19 mil seguidores</p>
+                    <p class="p-0 m-0">+10 mil seguidores</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="desktop shadow-lg">
+              <a
+                href="https://t.me/joinchat/TV_9inAeKDzojfgZ"
+                target="_blank"
+              >
+                <div class="d-flex flex-row justify-content-center">
+                  <i class="fab fa-telegram-plane fa-3x py-2 pr-3"></i>
+                  <div class="text text-left">
+                    <h3 class="pt-1 m-0">Telegram</h3>
+                    <p class="p-0 m-0">40 membros</p>
                   </div>
                 </div>
               </a>
             </div>
           </div>
-          <a href=""></a>
-        </div>
       </section>
 
       <!-- Section 4 -->
-      <section class="section-4">
+      <section class="section-4" id="resultados" >
         <div class="container text-center">
-          <h1 class="text-dark">Alguns Resultados...</h1>
+          <h1 class="text-dark">Materiais Gratuitos</h1>
           <!-- <p class="text-secondary">Lorem ipsum dolor sit amet.</p> -->
         </div>
         <div class="team row">
           <div class="col-md-4 col-12 text-center">
             <div class="card mr-2 d-inline-block shadow-lg">
-              <div class="card-img-top">
-                <img
-                  src="https://instagram.frao1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/69518381_2446086788762734_3546872641161789440_n.jpg?_nc_ht=instagram.frao1-1.fna.fbcdn.net&_nc_ohc=s5T8biRxvIIAX-XBkDs&tp=1&oh=617216fbd0d5e4a0c78b1256f6b3b89e&oe=602C2941"
-                  class="img-fluid border-radius p-4"
-                  alt=""
-                />
-              </div>
               <div class="card-body">
-                <h3 class="card-title">Fabiana Rodrigues</h3>
+                <h3 class="card-title">TRI</h3>
+                <p class="text-black-50">Teoria da Resposta ao Item</p>
                 <p class="card-text"></p>
-                <a href="#" class="text-secondary text-decoration-none"
-                  >Aprovado!!</a
+                <a href="https://drive.google.com/file/d/10Br6fkKVWTIQHjEFW2d4mp7BsLe4MnrQ/view?usp=sharing" target="_blank" class="text-secondary text-decoration-none"
+                  >link</a
                 >
-                <p class="text-black-50">Obstetrícia na USP</p>
+                <p class="text-black-50">Entenda como funciona a TRI</p>
               </div>
             </div>
           </div>
-          <div id="resultados" class="col-md-4 col-12">
+          <div class="col-md-4 col-12">
             <div
               id="carouselExampleControls"
               class="carousel slide"
@@ -344,41 +343,89 @@
               <div class="carousel-inner text-center">
                 <div class="carousel-item active">
                   <div class="card mr-2 d-inline-block shadow">
-                    <div class="card-img-top">
-                      <img
-                        src="https://instagram.frao1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/16464967_169887826834975_1784591089382981632_a.jpg?_nc_ht=instagram.frao1-1.fna.fbcdn.net&_nc_ohc=DB2xNcbOokgAX9XZRXd&tp=1&oh=321de4d57041476e88d3c9e937de25aa&oe=602A1655"
-                        class="img-fluid rounded-circle w-50 p-4"
-                        alt=""
-                      />
-                    </div>
                     <div class="card-body">
-                      <h3 class="card-title">José Carlos</h3>
+                      <h3 class="card-title">Apostila Gratuita</h3>
                       <p class="card-text"></p>
-                      <a href="#" class="text-secondary text-decoration-none"
-                        >Aprovado!!</a
+                      <a href="https://drive.google.com/file/d/1nDJCDxyWIqTeUAgFh706E-EbyNLjFXGR/view?usp=sharing" target="_blank" class="text-secondary text-decoration-none"
+                        >link</a
                       >
                       <p class="text-black-50">
-                        Arquitetura e Urbanismo - UFOP
+                        Apostila com 30 assuntos de físicas que mais caem no ENEM
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div class="card d-inline-block mr-2 shadow">
-                    <div class="card-img-top">
-                      <img
-                        src="https://instagram.frao1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/129699385_864018547689721_5762947137799885181_n.jpg?_nc_ht=instagram.frao1-1.fna.fbcdn.net&_nc_ohc=sY3QEjAoBG4AX_mqGcQ&tp=1&oh=1d9007a071a234f9a41ed9f38c7a3636&oe=602BF8BA"
-                        class="img-fluid rounded-circle w-50 p-4"
-                        alt=""
-                      />
-                    </div>
                     <div class="card-body">
-                      <h3 class="card-title">Thales Santos</h3>
+                      <h3 class="card-title">Simuladão de <b>919</b> questões</h3>
                       <p class="card-text"></p>
-                      <a href="#" class="text-secondary text-decoration-none"
-                        >Aprovado!!</a
+                      <a href="https://drive.google.com/file/d/1RpDdRKG07VlLjmgpayCWROBgvM1yTryN/view?usp=sharing" target="_blank" class="text-secondary text-decoration-none"
+                        >link</a
                       >
-                      <p class="text-black-50">Fonoaudiologia na UFMG</p>
+                      <p cla ss="text-black-50">Apostila com vários exercícios de cada tema que cai no ENEM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+              <div class="card-body">
+                <h3 class="card-title">Formulário para o ENEM</h3>
+                <p class="card-text"></p>
+                <a href="https://drive.google.com/file/d/1Bb1WauwlhBfouau_OCVPgY0KRKv7SE--/view?usp=sharing" target="_blank" class="text-secondary text-decoration-none"
+                  >link</a
+                >
+                <p class="text-black-50">As principais fórmulas que você precisa para o ENEM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team row">
+          <div class="col-md-4 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+              <div class="card-body">
+                <h3 class="card-title">Matriz ENEM de física</h3>
+                <p class="card-text"></p>
+                <a href="https://drive.google.com/file/d/18FJYxNqXSqB57GfWPi1tjiriHJccrypm/view?usp=sharing" target="_blank"class="text-secondary text-decoration-none"
+                  >link</a
+                >
+                <p class="text-black-50">Matriz de Referência de Física para o ENEM</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner text-center">
+                <div class="carousel-item active">
+                  <div class="card mr-2 d-inline-block shadow">
+                    <div class="card-body">
+                      <h3 class="card-title">Lista de Exercícios</h3>
+                      <p class="card-text"></p>
+                      <a href="https://drive.google.com/drive/folders/1qMJKCdkpmgMZgFxOSpw2AhEvOFD1obxq?usp=sharing" target="_blank" class="text-secondary text-decoration-none"
+                        >link</a
+                      >
+                      <p class="text-black-50">
+                       Muitos exercícios da física para se preparar ainda mais...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card d-inline-block mr-2 shadow">
+                    <div class="card-body">
+                      <h3 class="card-title">Atividades para se preparar</h3>
+                      <p class="card-text"></p>
+                      <a href="https://drive.google.com/drive/folders/1qMJKCdkpmgMZgFxOSpw2AhEvOFD1obxq?usp=sharing" target="_blank"  class="text-secondary text-decoration-none"
+                        >link</a
+                      >
+                      <p class="text-black-50">Várias questões sobre diversos temas da física.</p>
                     </div>
                   </div>
                 </div>
@@ -395,12 +442,12 @@
                 />
               </div>
               <div class="card-body">
-                <h3 class="card-title">Gabriel Henrique</h3>
+                <h3 class="card-title">Formulário <b>GERAL</b> de física</h3>
                 <p class="card-text"></p>
-                <a href="#" class="text-secondary text-decoration-none"
-                  >Aprovado!!</a
+                <a href="https://drive.google.com/file/d/1-YMzzi_Rr1aVkMhEWGiD_-voXYVf6-_D/view?usp=sharing" target="_blank"class="text-secondary text-decoration-none"
+                  >link</a
                 >
-                <p class="text-black-50">Direito na UFMG</p>
+                <p class="text-black-50">Todas as principais fórmulas de física que você precisa</p>
               </div>
             </div>
           </div>
@@ -417,47 +464,26 @@
               
             </p> -->
             <p class="pt-4 text-muted">
-              Copyright ©2020 All rights reserved | This template is made with
-              by
-              <span> Lucas Henrique</span>
+              Copyright ©2021 este site foi feito por
+              <span><a href="https://lucas-henrique-lopes-costa.github.io/Lucas-Henrique-Lopes-Costa/"></a>Lucas Henrique</span>
             </p>
           </div>
-
-          <!-- <div class="col-md-5 col-sm-12">
-            <h4 class="text-light">Newsletter</h4>
-            <p class="text-muted">Stay Updated</p>
-            <form class="form-inline">
-              <div class="col pl-0">
-                <div class="input-group pr-5">
-                  <input
-                    type="text"
-                    class="form-control bg-dark text-white"
-                    id="inlineFormInputGroupUsername2"
-                    placeholder="Email"
-                  />
-                  <div class="input-group-prepend">
-                    <div class="input-group-text">
-                      <i class="fas fa-arrow-right"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div> -->
 
           <div class="col-md-2 col-sm-12">
             <h4 class="text-light">Me singua nas Redes Socias</h4>
             <div class="column text-light">
-              <a href=""><i class="fab fa-facebook-f"></i></a>
               <a
-                href="https://www.instagram.com/prof.antoniofernandes/?hl=pt-br"
+                href="http://instagram.com/profabud/"
                 ><i class="fab fa-instagram"></i
               ></a>
-              <a href="https://twitter.com/o_afernandez"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a href="https://www.youtube.com/professorantoniofernandes"
+              <a href="https://www.youtube.com/channel/UCkdFesSXh5O9bibWscu7k7Q"
                 ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="https://t.me/joinchat/TV_9inAeKDzojfgZ"
+                ><i class="fab fa-telegram-plane"></i
+              ></a>
+              <a href="https://api.whatsapp.com/message/6252KLASPXSHN1"
+                ><i class="fab fa-whatsapp"></i
               ></a>
             </div>
           </div>
